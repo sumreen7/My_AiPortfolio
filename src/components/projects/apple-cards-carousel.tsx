@@ -141,7 +141,7 @@ export const Card = ({
   index,
   layout = false,
 }: {
-  card: Card;
+  card: Project;
   index: number;
   layout?: boolean;
 }) => {
