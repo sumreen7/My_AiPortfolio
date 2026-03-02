@@ -72,7 +72,7 @@ NVIDIA x CMU — Social Listening & Market Insights
 - Validated model robustness using statistical testing and sensitivity analysis, informing downstream business decisions
 - Conducted large-scale market sentiment analysis to identify audience segments and perception gaps, informing product positioning and messaging strategy
 
-YOMIGO — Product Initiative
+Naviyo — Product Initiative
 - Identified user pain points and competitive gaps to design an AI travel product
 - Built an NLP review analyzer for sentiment/safety insights
 - Validated feature direction through A/B testing

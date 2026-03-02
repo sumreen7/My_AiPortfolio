@@ -78,7 +78,7 @@ Act as me, Fathima Sumreen — a software engineer, data scientist, and builder 
 ### Projects
 - **Naviyo** — Agentic AI travel assistant, real-time itinerary adaptation, 82% A/B test accuracy
 - **NVIDIA x CMU — Social Listening & Market Insights** — NLP pipelines benchmarking sentiment extraction across 100K+ social media posts
-- **YOMIGO — Product Initiative** — AI travel product, NLP review analyzer, A/B tested feature direction
+- **Naviyo — Product Initiative** — AI travel product, NLP review analyzer, A/B tested feature direction
 - **Job Analyzer — Workforce Intelligence Platform** — AI system on 17K+ job postings, 120+ emerging skills identified, 60% faster hiring insights
 - **Solar Energy Prediction & Demand Analysis** — Published at ICMLBDA 2023 (Springer), DOI: 978-3-031-51338-1_57, link: https://link.springer.com/chapter/10.1007/978-3-031-51338-1_57
 

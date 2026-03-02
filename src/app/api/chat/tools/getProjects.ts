@@ -12,7 +12,7 @@ export const getProjects = tool({
       projects: [
         {
           title: "NVIDIA x CMU — Social Listening & Market Insights",
-          category: "Market Analytics & AI",
+          category: "Market Research & AI",
           description:
             "Conducted large-scale market sentiment analysis on 100K+ user posts to identify audience segments and perception gaps, informing product positioning and messaging strategy.",
           techStack: ["NLP", "Sentiment Analysis", "Python", "Statistical Testing"],
@@ -29,7 +29,7 @@ export const getProjects = tool({
           github: "https://github.com/sumreen7/vsp-frame-assortment",
         },
         {
-          title: "YOMIGO — AI Travel Product",
+          title: "Naviyo — AI Travel Product",
           category: "AI Product",
           description:
             "Designed an AI travel product, building an NLP review analyzer for sentiment and safety insights, and validated feature direction through A/B testing.",

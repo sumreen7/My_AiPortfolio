@@ -22,13 +22,13 @@ const PROJECT_CONTENT = [
     images: [{ src: '/landing-memojis.png', alt: 'VSP Vision Frame Assortment Intelligence' }],
   },
   {
-    title: 'YOMIGO — AI Travel Product',
+    title: 'Naviyo — AI Travel Product',
     description:
       'Identified user pain points and competitive gaps to design an AI travel product. Built an NLP review analyzer for sentiment and safety insights, and validated feature direction through A/B testing.',
     techStack: ['NLP', 'A/B Testing', 'Python', 'Sentiment Analysis', 'Product Design', 'AI'],
     date: '2025',
     links: [{ name: 'GitHub', url: '#' }],
-    images: [{ src: '/landing-memojis.png', alt: 'YOMIGO AI Travel Product' }],
+    images: [{ src: '/landing-memojis.png', alt: 'Naviyo AI Travel Product' }],
   },
   {
     title: 'Job Analyzer — Workforce Intelligence Platform',
@@ -121,7 +121,7 @@ const ProjectContent = ({ project }: { project: ProjectProps }) => {
 
 export const data = [
   {
-    category: 'Market Analytics & AI',
+    category: 'Market Research & AI',
     title: 'NVIDIA x CMU — Social Listening & Market Insights',
     src: '/landing-memojis.png',
     content: <ProjectContent project={{ title: 'NVIDIA x CMU — Social Listening & Market Insights' }} />,
@@ -133,10 +133,10 @@ export const data = [
     content: <ProjectContent project={{ title: 'VSP Vision — Frame Assortment Intelligence' }} />,
   },
   {
-    category: 'AI Product',
-    title: 'YOMIGO — AI Travel Product',
+    category: 'AI Product - Startup',
+    title: 'Naviyo — AI Travel Product',
     src: '/landing-memojis.png',
-    content: <ProjectContent project={{ title: 'YOMIGO — AI Travel Product' }} />,
+    content: <ProjectContent project={{ title: 'Naviyo — AI Travel Product' }} />,
   },
   {
     category: 'Data Analytics',
