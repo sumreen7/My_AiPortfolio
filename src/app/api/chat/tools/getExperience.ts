@@ -3,8 +3,7 @@ import { z } from 'zod';
 
 export const getExperience = tool({
   description:
-    "Get detailed information about Fathima Sumreen's professional experience — from engineering at Salesforce to founding AI startup Naviyo, research publications, and internships. Use this when users ask about work history, roles, startup, research, or career journey.",
-  parameters: z.object({
+  "Get DETAILED information about Sumreen's professional experience. Only use this when the user asks for IN-DEPTH details about a specific role, internship, startup, or research work. Do NOT use this for simple questions like 'what companies have you worked for' or 'where have you worked' — answer those in plain text instead.",  parameters: z.object({
     detail: z.enum(['current', 'previous', 'startup', 'research', 'all'])
       .optional()
       .describe('Specify which experience to focus on: current startup, previous roles, research, or all')
