@@ -23,11 +23,13 @@ export const getMe = tool({
         "Python & SQL",
         "Market Research & Competitive Analysis"
       ],
-      experience: [
-        "Salesforce - Software Engineer (Asset Management, Business Technology)",
-        "Salesforce - Summer Analyst Intern (Global Enterprise Operations)",
-        "SRM Films - Product Analytics & Insights Intern"
-      ],
+
+experience: [
+  "Founder & Builder - Naviyo (Adaptive AI Travel Partner) — Active",
+  "Salesforce - Software Engineer (Asset Management, Business Technology)",
+  "Salesforce - Summer Analyst Intern (Global Enterprise Operations)",
+  "SRM Films - Product Analytics & Insights Intern"
+],
       education: [
         "Carnegie Mellon University - MISM, Business Intelligence & Data Analytics (2025–2026)",
         "G. Narayanamma Institute of Technology and Science - B.E. Information Technology, GPA 9.29/10 (2019–2023)"

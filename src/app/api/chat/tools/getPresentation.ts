@@ -3,7 +3,7 @@ import { z } from 'zod';
 
 export const getPresentation = tool({
   description:
-    'This tool returns a concise personal introduction of Rakshith Dharmappa. It is used to answer the question "Who are you?" or "Tell me about yourself"',
+  'This tool returns a concise personal introduction of Fathima Sumreen. It is used to answer the question "Who are you?" or "Tell me about yourself"',
   parameters: z.object({}).optional(),
   execute: async (params = {}) => {
     return {
