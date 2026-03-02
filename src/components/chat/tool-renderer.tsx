@@ -11,7 +11,7 @@ import Resume from '../resume';
 import Skills from '../skills';
 import Sports from '../sport';
 import Achievements from '../achievements';
-import Certifications from '../certifications';
+import Certifications from '../Certifications';
 import {
   Collapsible,
   CollapsibleContent,
@@ -126,12 +126,12 @@ export default function ToolRenderer({ toolInvocations, messageId }: ToolRendere
               </div>
             );
 
-          case 'getCertifications':
-            return (
-              <div key={toolCallId} className="w-full rounded-lg p-2">
-                <Certifications data={parsedResult} />
-              </div>
-            );
+            case 'getCertifications':
+  return (
+    <div key={toolCallId} className="w-full rounded-lg p-2">
+      <Certifications data={parsedResult} />
+    </div>
+  );
 
           case 'getSports':
             return (

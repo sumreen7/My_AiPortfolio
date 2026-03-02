@@ -237,7 +237,7 @@ export async function POST(req: Request) {
     const modelConfig = {
       name: 'llama-3.1-8b-instant',
       maxSteps: 2, // Reduced for faster tool calls
-      maxTokens: 500, // Reduced token usage to avoid rate limits
+      maxTokens: 200, // Reduced token usage to avoid rate limits
       temperature: 0.5, // Lower temperature for more focused responses
     };
 

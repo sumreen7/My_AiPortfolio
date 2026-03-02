@@ -1,6 +1,5 @@
 'use client';
 
-import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { motion, Variants } from 'framer-motion';
 
 interface Certification {
@@ -22,19 +21,26 @@ interface CertificationsProps {
 const DEFAULT_CERTIFICATIONS: CertificationCategory[] = [
   {
     category: "Salesforce",
-    icon: "☁️",
+    icon: "salesforce.png", 
     items: [
-      { name: "Salesforce Certified Administrator", issuer: "Salesforce", year: "2023" },
-      { name: "Salesforce Certified Platform Developer I", issuer: "Salesforce", year: "2023" },
+      { name: "Salesforce Certified Advanced Administrator", issuer: "Salesforce", year: "2023" },
+      { name: "Salesforce Certified Platform Developer I", issuer: "Salesforce", year: "2024" },
       { name: "Trailblazer — 82,000+ points, 186 badges", issuer: "Salesforce Trailhead", year: "2025" },
+    ],
+  },
+  {
+    category: "Product and Gen AI",
+    icon: "💎",
+    items: [
+      { name: "AI for Business Specialisation", issuer: "Wharton School of Business", year: "2025-2026" },
     ],
   },
   {
     category: "AI & Machine Learning",
     icon: "🤖",
     items: [
-      { name: "Machine Learning Specialization", issuer: "Coursera / Andrew Ng", year: "2023" },
-      { name: "Deep Learning Specialization", issuer: "Coursera / DeepLearning.AI", year: "2023" },
+      { name: "Machine Learning Specialization", issuer: "Coursera / Andrew Ng", year: "2024" },
+      { name: "Deep Learning Specialization", issuer: "Coursera / DeepLearning.AI", year: "2025" },
     ],
   },
   {
@@ -42,83 +48,81 @@ const DEFAULT_CERTIFICATIONS: CertificationCategory[] = [
     icon: "☁️",
     items: [
       { name: "Microsoft Azure Fundamentals (AZ-900)", issuer: "Microsoft", year: "2023" },
-      { name: "Google Cloud Fundamentals", issuer: "Google", year: "2023" },
+      { name: "Google Cloud Fundamentals", issuer: "Google", year: "2022" },
     ],
-  },
+  }
 ];
 
+const categoryColors: Record<string, { bg: string; text: string; dot: string }> = {
+  "Salesforce":            { bg: "bg-blue-50 dark:bg-blue-950/30",    text: "text-blue-600 dark:text-blue-400",    dot: "bg-blue-400" },
+  "Product and Gen AI":    { bg: "bg-red-50 dark:bg-red-950/30", text: "text-red-600 dark:text-red-400", dot: "bg-red-400" },
+  "AI & Machine Learning": { bg: "bg-purple-50 dark:bg-purple-950/30", text: "text-purple-600 dark:text-purple-400", dot: "bg-purple-400" },
+  "Cloud & Data":          { bg: "bg-emerald-50 dark:bg-emerald-950/30",      text: "text-emerald-600 dark:text-emerald-400",      dot: "bg-emerald-400" },
+};
+
+const fallbackColor = { bg: "bg-gray-50 dark:bg-gray-900/30", text: "text-gray-600 dark:text-gray-400", dot: "bg-gray-400" };
+
+const containerVariants: Variants = {
+  hidden: { opacity: 0 },
+  visible: { opacity: 1, transition: { staggerChildren: 0.1 } },
+};
+
+const cardVariants: Variants = {
+  hidden: { opacity: 0, y: 16 },
+  visible: { opacity: 1, y: 0, transition: { duration: 0.5, ease: [0.19, 1, 0.22, 1] } },
+};
+
 const Certifications = ({ data }: CertificationsProps) => {
-  const containerVariants: Variants = {
-    hidden: { opacity: 0 },
-    visible: {
-      opacity: 1,
-      transition: { staggerChildren: 0.1 },
-    },
-  };
-
-  const itemVariants: Variants = {
-    hidden: { opacity: 0, y: 20 },
-    visible: {
-      opacity: 1,
-      y: 0,
-      transition: { duration: 0.5, ease: [0.19, 1, 0.22, 1] },
-    },
-  };
-
   const certifications = data?.certifications ?? DEFAULT_CERTIFICATIONS;
 
   return (
     <motion.div
-      initial={{ scale: 0.98, opacity: 0 }}
-      animate={{ scale: 1, opacity: 1 }}
-      transition={{ duration: 0.6, ease: [0.19, 1, 0.22, 1] }}
-      className="mx-auto w-full max-w-5xl"
+      initial={{ opacity: 0, y: 12 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.5, ease: [0.19, 1, 0.22, 1] }}
+      className="mx-auto w-full max-w-2xl px-1 py-4"
     >
-      <Card className="w-full border-none px-6 pb-12 shadow-none">
-        <CardHeader className="px-0 pb-1">
-          <CardTitle className="text-primary px-0 text-4xl font-bold">
-            Certifications
-          </CardTitle>
-        </CardHeader>
+      <div className="mb-6 px-1">
+        <p className="text-xs font-semibold uppercase tracking-widest text-muted-foreground">Credentials</p>
+        <h2 className="mt-1 text-3xl font-bold tracking-tight text-foreground">Certifications</h2>
+      </div>
 
-        <CardContent className="px-0">
-          <motion.div
-            className="space-y-6"
-            variants={containerVariants}
-            initial="hidden"
-            animate="visible"
-          >
-            {certifications.map((section, index) => (
-              <motion.div
-                key={index}
-                className="space-y-3"
-                variants={itemVariants}
-              >
-                <div className="flex items-center gap-2">
-                  <span className="text-xl">{section.icon}</span>
-                  <h3 className="text-accent-foreground text-lg font-semibold">
-                    {section.category}
-                  </h3>
-                </div>
-                <ul className="space-y-3 pl-8">
-                  {section.items.map((cert, idx) => (
-                    <li key={idx} className="flex items-start gap-2">
-                      <span className="text-primary mt-1.5 h-1.5 w-1.5 rounded-full bg-current flex-shrink-0" />
-                      <div>
-                        <p className="text-sm font-medium text-accent-foreground">{cert.name}</p>
-                        <p className="text-xs text-muted-foreground">{cert.issuer} · {cert.year}</p>
+      <motion.div className="space-y-4" variants={containerVariants} initial="hidden" animate="visible">
+        {certifications.map((section, sectionIdx) => {
+          const color = categoryColors[section.category] ?? fallbackColor;
+          return (
+            <motion.div key={sectionIdx} variants={cardVariants} className="overflow-hidden rounded-2xl border border-border/50 bg-card shadow-sm">
+              <div className={`flex items-center gap-2.5 px-4 py-3 ${color.bg}`}>
+                {/* <span className="text-base">{section.icon}</span> */}
+                {section.category === "Salesforce" ? (
+  <img
+    src="/salesforce.png"
+    alt="Salesforce"
+    className="h-4 w-auto"
+  />
+) : (
+  <span className="text-base">{section.icon}</span>
+)}
+                <span className={`text-xs font-semibold uppercase tracking-widest ${color.text}`}>{section.category}</span>
+              </div>
+              <div className="divide-y divide-border/40">
+                {section.items.map((cert, idx) => (
+                  <motion.div key={idx} className="flex items-center justify-between px-4 py-3.5" whileHover={{ backgroundColor: 'hsl(var(--muted) / 0.4)' }} transition={{ duration: 0.15 }}>
+                    <div className="flex items-center gap-3 min-w-0">
+                      <span className={`mt-0.5 h-2 w-2 flex-shrink-0 rounded-full ${color.dot}`} />
+                      <div className="min-w-0">
+                        <p className="text-sm font-medium text-foreground">{cert.name}</p>
+                        <p className="text-xs text-muted-foreground mt-0.5">{cert.issuer}</p>
                       </div>
-                    </li>
-                  ))}
-                </ul>
-                {index < certifications.length - 1 && (
-                  <div className="border-t border-border pt-2" />
-                )}
-              </motion.div>
-            ))}
-          </motion.div>
-        </CardContent>
-      </Card>
+                    </div>
+                    <span className="ml-4 flex-shrink-0 rounded-full bg-muted px-2.5 py-0.5 text-xs font-medium text-muted-foreground">{cert.year}</span>
+                  </motion.div>
+                ))}
+              </div>
+            </motion.div>
+          );
+        })}
+      </motion.div>
     </motion.div>
   );
 };
