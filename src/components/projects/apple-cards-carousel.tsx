@@ -19,20 +19,14 @@ import React, {
 
 import { ReactNode } from "react";
 
-interface Project {
-  category: string;
-  title: string;
+type CardData = {
   src: string;
-  description: string;
-  techStack: string[];
-  date: string;
-  context: string;
-  role: string;
-  highlights: string[];
-  links: { name: string; url: string }[];
-  images: { src: string; alt: string }[];
-  content: ReactNode;
-}
+  title: string;
+  category: string;
+  content: React.ReactNode;
+  description?: string;
+  techStack?: string[];
+};
 
 export const CarouselContext = createContext<{
   onCardClose: (index: number) => void;
@@ -141,7 +135,7 @@ export const Card = ({
   index,
   layout = false,
 }: {
-  card: Project;
+  card: CardData;
   index: number;
   layout?: boolean;
 }) => {
