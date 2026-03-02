@@ -12,7 +12,7 @@ export const getProjects = tool({
       projects: [
         {
           title: "NVIDIA x CMU — Social Listening & Market Insights",
-          category: "Market Research & AI",
+          category: "Market Analytics & AI",
           description:
             "Conducted large-scale market sentiment analysis on 100K+ user posts to identify audience segments and perception gaps, informing product positioning and messaging strategy.",
           techStack: ["NLP", "Sentiment Analysis", "Python", "Statistical Testing"],
@@ -21,7 +21,7 @@ export const getProjects = tool({
         },
         {
           title: "VSP Vision — Frame Assortment Intelligence",
-          category: "CMU Capstone",
+          category: "Retail Analytics & Forecasting",
           description:
             "Built an end-to-end demand forecasting and assortment optimization pipeline for Visionworks eyewear retail — 162 SKUs, 910K+ units. XGBoost model (R² = 0.737) to predict SKU-level monthly demand.",
           techStack: ["XGBoost", "Python", "Time-Series Forecasting", "Retail Analytics"],

@@ -18,7 +18,7 @@ const DEFAULT_ACHIEVEMENTS: AchievementCategory[] = [
   { category: "Engineering Impact @ Salesforce", icon: "⚡", items: ["40% reduction in onboarding time by redesigning lifecycle workflows", "65% cut in manual verification effort via A/B tested automation", "Shipped features serving 40K+ enterprise users end-to-end", "82,000+ Trailhead points, 186 badges"] },
   { category: "Community & Volunteering", icon: "🤝", items: ["StreetCause Coordinator — improved school infrastructure for underprivileged children", "Rotaract Club GNITS (Joint Director) — benefited 400+ people directly", "Entrepreneurship Cell GNITS (Director) — increased event attendance by 30%", "Earth Force Club, Salesforce — sustainability & tree-planting campaigns"] },
   { category: "Content & Community", icon: "📚", items: ["Founder of @coffeennovels — 60,000+ Instagram followers", "Book influencer inspiring deeper appreciation for fiction & literature"] },
-  { category: "Academic", icon: "🎓", items: ["MISM at Carnegie Mellon University (Class of 2026)", "Selected for NVIDIA x CMU industry research collaboration", "VSP Vision CMU Capstone — R² = 0.737 demand forecasting model", "Languages: English, Spanish, Hindi, Telugu, Arabic, Urdu, ASL"] },
+  { category: "Academic", icon: "🎓", items: ["MISM at Carnegie Mellon University (Class of 2026)", "Selected for NVIDIA x CMU industry research collaboration", "VSP Vision — R² = 0.737 demand forecasting model", "Languages: English, Spanish, Hindi, Telugu, Arabic, Urdu, ASL"] },
 ];
 
 const categoryColors: Record<string, { bg: string; text: string; dot: string }> = {

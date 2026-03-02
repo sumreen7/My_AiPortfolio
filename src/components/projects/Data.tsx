@@ -121,13 +121,13 @@ const ProjectContent = ({ project }: { project: ProjectProps }) => {
 
 export const data = [
   {
-    category: 'Market Research & AI',
+    category: 'Market Analytics & AI',
     title: 'NVIDIA x CMU — Social Listening & Market Insights',
     src: '/landing-memojis.png',
     content: <ProjectContent project={{ title: 'NVIDIA x CMU — Social Listening & Market Insights' }} />,
   },
   {
-    category: 'CMU Capstone',
+    category: 'Retail Analytics & Forecasting',
     title: 'VSP Vision — Frame Assortment Intelligence',
     src: '/landing-memojis.png',
     content: <ProjectContent project={{ title: 'VSP Vision — Frame Assortment Intelligence' }} />,
