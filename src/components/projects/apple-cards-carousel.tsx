@@ -17,14 +17,22 @@ import React, {
   useState,
 } from 'react';
 
-type Card = {
-  src: string;
-  title: string;
+import { ReactNode } from "react";
+
+interface Project {
   category: string;
-  content: React.ReactNode;
-  description?: string;
-  techStack?: string[];
-};
+  title: string;
+  src: string;
+  description: string;
+  techStack: string[];
+  date: string;
+  context: string;
+  role: string;
+  highlights: string[];
+  links: { name: string; url: string }[];
+  images: { src: string; alt: string }[];
+  content: ReactNode;
+}
 
 export const CarouselContext = createContext<{
   onCardClose: (index: number) => void;

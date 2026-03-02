@@ -17,7 +17,7 @@ export const getProjects = tool({
             "Conducted large-scale market sentiment analysis on 100K+ user posts to identify audience segments and perception gaps, informing product positioning and messaging strategy.",
           techStack: ["NLP", "Sentiment Analysis", "Python", "Statistical Testing"],
           date: "2025",
-          github: "#",
+          github: "https://github.com/sumreen7/nvidiaxcmu",
         },
         {
           title: "VSP Vision — Frame Assortment Intelligence",
@@ -34,7 +34,7 @@ export const getProjects = tool({
           description:
             "Designed an AI travel product, building an NLP review analyzer for sentiment and safety insights, and validated feature direction through A/B testing.",
           techStack: ["NLP", "A/B Testing", "Python", "Sentiment Analysis"],
-          date: "2025",
+          date: "Currently working on it",
           github: "#",
         },
         {
@@ -44,7 +44,7 @@ export const getProjects = tool({
             "Built an AI-driven system on 17K+ U.S. tech job postings. Created automated dashboards that identified 120+ emerging skills and accelerated hiring insights by 60%.",
           techStack: ["Python", "SQL", "Data Processing", "Dashboard"],
           date: "2025",
-          github: "#",
+          github: "https://github.com/esha-pandya0203/dfp-job-analyzer",
         },
       ],
     };
