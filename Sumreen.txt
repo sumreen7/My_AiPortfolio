@@ -2,19 +2,23 @@ Fathima Sumreen
 sumreenf@andrew.cmu.edu | +1-412-708-4876 | LinkedIn | GitHub | Portfolio
 
 Professional Summary
-I'm Sumreen — a software engineer, data scientist, and builder with a product mindset. I've spent 2+ years at Salesforce shipping agentic AI workflows for enterprise-scale systems, and I'm currently at Carnegie Mellon University pursuing my Master's in Information Systems Management (Business Intelligence & Data Analytics). On the side, I'm building Naviyo, an adaptive AI travel assistant that personalizes itineraries in real time.
+I'm Sumreen — a software engineer, data scientist, and builder with a product mindset. I've spent 2+ years at Salesforce shipping agentic AI workflows for enterprise-scale systems, and I'm currently at Carnegie Mellon University pursuing my Master's in Information Systems Management (Business Intelligence & Data Analytics). On the side, I'm co-founding Naviyo, an adaptive AI travel assistant that personalizes itineraries in real time.
 
 I sit at the intersection of engineering, AI, and product thinking — I care about building things that actually work and actually matter.
 
 Technical Skills
 AI/ML Technologies: LLMs, Retrieval-Augmented Generation (RAG), Multi-Agent Systems, Prompt Engineering, Fine-tuning, Natural Language Processing (NLP), Transformer Architecture, Hugging Face
-Machine Learning: PyTorch, TensorFlow, Scikit-learn, MLflow, Vector Databases (Pinecone, FAISS)
-Programming Languages: Python, JavaScript, Java, SQL, Shell Scripting
+Machine Learning: PyTorch, TensorFlow, Scikit-learn, MLflow, XGBoost, Vector Databases (Pinecone, FAISS)
+Programming Languages: Python, JavaScript, Java, SQL, SOQL, Shell Scripting
 Cloud & DevOps: Docker, Kubernetes, Azure (Blob Storage, AKS, Cognitive Services), AWS, Airflow, CI/CD
 Data Engineering: Apache Kafka, Spark, PySpark, ETL Pipelines, Neo4j, Redis, PostgreSQL
 Frameworks: FastAPI, React, Flask, Streamlit, Gradio
+BI & Analytics: Power BI, Tableau, Matplotlib, Seaborn, KPI design, data storytelling
+
+---
 
 Professional Experience
+
 Software Engineer — Salesforce
 Asset Management, Business Technology | Hyderabad, India | Jul 2023 – Aug 2025
 
@@ -55,34 +59,50 @@ Under Professor Dr. Supriya Vaddi | Hyderabad, India | 2022 – 2023
 
 ---
 
-CURRENT PROJECT / STARTUP
-Naviyo – Adaptive AI Travel Partner (Founder & Builder) | Active
+Current Startup
+Naviyo – Adaptive AI Travel Partner | Co-Founder & Builder | Active
+GitHub: https://github.com/umgpy/naviyo
 
 Building an AI travel assistant that dynamically adapts itineraries in real time based on who you are and what's happening around you — weather, crowds, preferences, and more.
 
 - Designed a tool-using agentic AI system combining LLM reasoning, NLP sentiment analysis, and real-time signals
-- Built NLP review analyzer for sentiment and safety insights
-- Incorporated behavioral feedback loops to personalize recommendations over time
+- Built NLP review analyzer for sentiment and safety insights, helping users make smarter destination decisions
+- Incorporated behavioral feedback loops to personalize recommendations over time — the more you use it, the smarter it gets
 - Validated via A/B testing with 200+ users, achieving 82% classification accuracy
-- Applied product thinking end-to-end: user research, competitive analysis, iterative feature development
+- Applied product thinking end-to-end: user research, pain point mapping, competitive analysis, iterative feature development
 
-Key Projects
-NVIDIA x CMU — Social Listening & Market Insights
+---
+
+Key Projects
+
+NVIDIA x CMU — Social Listening & Market Insights (2025)
+GitHub: https://github.com/sumreen7/nvidiaxcmu
 - Designed NLP pipelines and evaluation frameworks to benchmark sentiment extraction and topic modeling across 100K+ social media posts
-- Validated model robustness using statistical testing and sensitivity analysis, informing downstream business decisions
-- Conducted large-scale market sentiment analysis to identify audience segments and perception gaps, informing product positioning and messaging strategy
+- Validated model robustness using statistical testing and sensitivity analysis
+- Identified audience segments and perception gaps to inform NVIDIA's product positioning and messaging strategy
 
-Naviyo — Product Initiative
-- Identified user pain points and competitive gaps to design an AI travel product
-- Built an NLP review analyzer for sentiment/safety insights
-- Validated feature direction through A/B testing
+VSP Vision — Frame Assortment Intelligence (2025) [CMU Capstone]
+GitHub: https://github.com/sumreen7/VSPVision_IntelligentAnalytics
+- Built end-to-end demand forecasting pipeline for Visionworks eyewear retail — 162 SKUs, 3 brands, 2 regions, 910K+ units
+- Engineered 33 leakage-free time-series features; trained XGBoost model achieving R² = 0.737
+- Identified $150–$199 over-assortment and $200–$249 sweet spot; surfaced white-space in Oval, Titanium, Cat Eye styles
+- Delivered 14 prioritized product action items for the merchandising team
 
-Job Analyzer — Workforce Intelligence Platform
+Job Analyzer — Workforce Intelligence Platform (2025)
+GitHub: https://github.com/esha-pandya0203/dfp-job-analyzer
 - Built an AI-driven system using structured data processing on 17K+ U.S. tech job postings
 - Created automated dashboards identifying 120+ emerging skills
 - Accelerated hiring insights by 60%
 
+Solar Energy Prediction & Demand Analysis (2023) [Published Research]
+Link: https://link.springer.com/chapter/10.1007/978-3-031-51338-1_57
+- Published at ICMLBDA 2023 (Springer) — 15+ citations, 500+ downloads
+- Developed predictive ML models for solar energy forecasting using meteorological variables and seasonal patterns
+
+---
+
 Education
+
 Carnegie Mellon University — Pittsburgh, PA
 Master of Information Systems Management (MISM) - Business Intelligence & Data Analytics
 Sept 2025 – Dec 2026
@@ -93,106 +113,34 @@ B.E. - Information Technology | GPA: 9.29/10
 Aug 2019 – May 2023
 Merit Certificate of Excellence: One of top three students to receive a scholarship for academic excellence and extracurricular leadership.
 
+---
+
 Achievements & Certifications
-- Published research paper at ICMLBDA 2023 (Springer) — "Solar Energy Prediction and Demand Analysis"
-- Merit Certificate of Excellence at GNITS — one of three students to receive scholarship for academic excellence and extracurricular leadership
-- Salesforce Ranger with 82,000+ Trailhead points
-- Accepted into Carnegie Mellon University's MISM program (MBA-equivalent, highly competitive)
+
+- Published research paper at ICMLBDA 2023 (Springer) — "Solar Energy Prediction and Demand Analysis" — 15+ citations, 500+ downloads
+- Merit Certificate of Excellence at GNITS — one of three students selected for academic excellence and extracurricular leadership
+- Salesforce Ranger — 82,000+ Trailhead points, 186 badges
+- Accepted into Carnegie Mellon University's MISM program (highly competitive, MBA-equivalent)
 - Reduced enterprise onboarding time by 40% and manual effort by 65% at Salesforce
 
-Contact
+Certifications:
+- Salesforce AI Associate
+- Salesforce Advanced Administrator
+- Salesforce Certified Platform Developer I
+- Salesforce App Builder
+- Wharton School — AI for Business Specialisation
+- Machine Learning Specialization — Coursera / Andrew Ng
+- Deep Learning Specialization — Coursera / DeepLearning.AI
+- Microsoft Azure Fundamentals (AZ-900)
+- Google Cloud Fundamentals
+
+---
+
+Contact
 Email: sumreenf@andrew.cmu.edu
 Phone: +1 (412) 708-4876
 LinkedIn: linkedin.com/in/sumreen7
 GitHub: github.com/sumreen7
-Location: Pittsburgh, Pennsylvania, USA
-
-Summary
-
-Top Skills
-Data Platform & Engineering:
-SQL, SOQL, Python, relational data modeling, ETL/ELT pipelines, data validation, semantic layers, data governance, data quality & observability
-
-AI & ML:
-Agentic AI systems, LLM-driven workflows, NLP pipelines, sentiment analysis, A/B testing, model evaluation & benchmarking, production ML deployment
-
-Business Intelligence & Analytics:
-Power BI, Tableau, interactive dashboards, data visualization (Matplotlib, Seaborn), KPI design, data storytelling, demo prototyping, GTM data enrichment
-
-Product & Strategy:
-Product strategy, PRDs, roadmap prioritization, market research, competitive analysis, business case development, change management
-
-Engineering & Collaboration:
-Agile/Scrum, SDLC, Azure DevOps, GitLab, REST APIs, workflow automation, cross-functional collaboration, unit & integration testing, mentorship, CI/CD pipelines
-
-Certifications
-- Salesforce AI Associate
-- Salesforce Advanced Admin
-- Salesforce App Builder
-- Wharton School — AI for Business
-- Salesforce Ranger: 82,000+ points on Trailhead
-
-At Carnegie Mellon University, my focus as a graduate student is on Business Intelligence & Data Analytics — exploring how AI, data systems, and product thinking come together to build things that actually matter.
-Previously at Salesforce, I led the design and rollout of agentic AI workflows for enterprise asset management, where my work reduced onboarding time by 40% and eliminated significant manual effort across pipelines serving 40K+ users. Working at that scale taught me how to think in systems — and how to ship work that holds up under pressure.
-This experience, combined with a published research background in ML and hands-on startup building with Naviyo, drives me to keep pushing at the intersection of engineering, AI, and product — building solutions that are both technically rigorous and genuinely useful.
-
-
-{/* Projects Section */}
-          <section id="projects" className="py-12 scroll-mt-20">
-            <motion.div
-              initial={{ opacity: 0 }}
-              whileInView={{ opacity: 1 }}
-              transition={{ duration: 0.5 }}
-              viewport={{ once: true }}
-            >
-              <h2 className="text-3xl font-bold mb-8 flex items-center text-foreground">
-                Featured Projects
-              </h2>
-            </motion.div>
-            <div className="grid md:grid-cols-2 gap-6">
-              <ProjectCard
-                title="Naviyo – Adaptive AI Travel Partner"
-                date="2024 - Present"
-                description="Built a tool-using agentic AI system that adapts travel itineraries in real time using weather, crowd data, and user preferences. Combines LLM reasoning, NLP sentiment analysis, and rule-based validation. Validated via A/B testing with 200+ users, achieving 82% classification accuracy."
-                tags={["Agentic AI", "LLMs", "NLP", "A/B Testing", "Python", "Real-time Systems"]}
-                image="/images/naviyo.png"
-                projectUrl="https://github.com/sumreen7"
-              />
-
-              <ProjectCard
-                title="NVIDIA x CMU – Social Listening & Market Insights"
-                date="2024"
-                description="Designed NLP pipelines and evaluation frameworks to benchmark sentiment extraction and topic modeling across 100K+ social media posts. Validated model robustness using statistical testing and sensitivity analysis, informing downstream product positioning and business decisions."
-                tags={["NLP", "Sentiment Analysis", "Topic Modeling", "Python", "Statistical Testing"]}
-                image="/images/nvidia-cmu.png"
-                projectUrl="https://github.com/sumreen7"
-              />
-
-              <ProjectCard
-                title="Job Analyzer – Workforce Intelligence Platform"
-                date="2024"
-                description="Built an AI-driven system using structured data processing on 17K+ U.S. tech job postings. Created automated dashboards identifying 120+ emerging skills and accelerated hiring insights by 60%."
-                tags={["Python", "Data Processing", "Dashboards", "AI", "SQL"]}
-                image="/jobanalyzer.jpg"
-                projectUrl="https://github.com/sumreen7"
-              />
-
-              <<ProjectCard
-  title="VSP Vision – Frame Assortment Intelligence"
-  date="2025"
-  description="Built an end-to-end demand forecasting and assortment optimization pipeline for Visionworks eyewear retail (162 SKUs, 3 brands, 2 regions, 910K+ units). Engineered 33 leakage-free time-series features and trained a tuned XGBoost model (R² = 0.737 log-scale). Identified price-tier inefficiencies, regional assortment gaps, and white-space opportunities (Oval, Titanium, Cat Eye), translating predictions into 14 prioritized product action items."
-  tags={["XGBoost", "Time-Series Forecasting", "Product Analytics", "Python", "Machine Learning", "Business Intelligence"]}
-  image="/images/vsp.png"
-  projectUrl="https://github.com/sumreen7/vsp-frame-assortment"
-/>
-
-              <ProjectCard
-                title="Solar Energy Prediction & Demand Analysis"
-                date="2023"
-                description="Published research at ICMLBDA 2023 (Springer). Developed predictive ML models for solar energy forecasting accounting for meteorological variables, seasonal patterns, and energy consumption trends. Achieved 15+ citations and 500+ downloads."
-                tags={["Machine Learning", "Python", "Predictive Modeling", "Research", "Feature Engineering"]}
-                image="/images/solar.png"
-                projectUrl="https://link.springer.com/chapter/10.1007/978-3-031-51338-1_57"
-              />
-            </div>
-          </section>
+Location: Pittsburgh, Pennsylvania, USA (Originally from Hyderabad, India)
+Open to: Full-time roles, internships, remote and hybrid positions, willing to relocate
+Visa: F-1 student visa — authorized to work via CPT/OPT, no sponsorship required
