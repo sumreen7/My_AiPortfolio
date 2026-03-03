@@ -173,7 +173,7 @@ This experience, combined with a published research background in ML and hands-o
                 date="2024"
                 description="Built an AI-driven system using structured data processing on 17K+ U.S. tech job postings. Created automated dashboards identifying 120+ emerging skills and accelerated hiring insights by 60%."
                 tags={["Python", "Data Processing", "Dashboards", "AI", "SQL"]}
-                image="/images/job-analyzer.png"
+                image="/jobanalyzer.jpg"
                 projectUrl="https://github.com/sumreen7"
               />
 

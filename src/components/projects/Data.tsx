@@ -168,7 +168,7 @@ const projectData: Omit<Project, "content">[] = [
   {
     category: "Workforce Analytics",
     title: "Job Analyzer — Workforce Intelligence Platform",
-    src: "/job-analyzer.png",
+    src: "/jobanalyzer.png",
     description:
       "Built an AI-driven workforce intelligence system that processes 17K+ U.S. tech job postings to surface emerging skill trends, hiring patterns, and market gaps. Automated dashboards cut time-to-insight by 60% and identified 120+ emerging skills shaping the future of tech hiring.",
     techStack: ["Python", "SQL", "NLP", "Data Processing", "Dashboard Automation", "Tableau", "Workforce Analytics"],
@@ -183,7 +183,7 @@ const projectData: Omit<Project, "content">[] = [
       "Delivered actionable insights on compensation trends, geographic demand shifts, and in-demand tech stacks",
     ],
     links: [{ name: "GitHub", url: "https://github.com/esha-pandya0203/dfp-job-analyzer" }],
-    images: [{ src: "/job-analyzer.png", alt: "Job Analyzer project" }],
+    images: [{ src: "/jobanalyzer.png", alt: "Job Analyzer project" }],
   },
 ];
 
