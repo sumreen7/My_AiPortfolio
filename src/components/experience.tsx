@@ -9,7 +9,7 @@ import Image from 'next/image';
 const Experience = () => {
   const experienceData = [
     {
-      title: 'Founder & Builder',
+      title: 'Co-Founder & Builder',
       company: 'Naviyo – Adaptive AI Travel Partner',
       period: 'Present',
       location: 'Pittsburgh, PA',

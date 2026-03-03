@@ -120,7 +120,7 @@ const projectData: Omit<Project, "content">[] = [
       "Validated findings with statistical hypothesis testing",
       "Delivered executive-ready messaging recommendations",
     ],
-    links: [{ name: "GitHub", url: "#" }],
+    links: [{ name: "GitHub", url: "https://github.com/sumreen7/nvidiaxcmu" }],
     images: [{ src: "/landing-memojis.png", alt: "NVIDIA Project" }],
   },
 
@@ -141,7 +141,7 @@ const projectData: Omit<Project, "content">[] = [
       "Surfaced $200–$249 revenue opportunity zone",
       "Delivered 14 prioritized merchandising action items",
     ],
-    links: [{ name: "GitHub", url: "https://github.com/sumreen7/vsp-frame-assortment" }],
+    links: [{ name: "GitHub", url: "https://github.com/sumreen7/VSPVision_IntelligentAnalytics" }],
     images: [{ src: "/landing-memojis.png", alt: "VSP Vision Project" }],
   },
 
@@ -153,8 +153,8 @@ const projectData: Omit<Project, "content">[] = [
       "Designed an agentic AI travel assistant that dynamically replans itineraries using real-time signals and behavioral feedback loops.",
     techStack: ["Agentic AI", "LLMs", "NLP", "A/B Testing"],
     date: "2025 — Present",
-    context: "Personal Startup · Founder",
-    role: "Founder, Engineer & Product Lead",
+    context: "Personal Startup · CoFounder",
+    role: "Co-Founder, Engineer & Product Lead",
     highlights: [
       "Built modular multi-agent AI architecture",
       "Integrated weather & crowd APIs for dynamic replanning",
@@ -162,7 +162,7 @@ const projectData: Omit<Project, "content">[] = [
       "Validated with 200+ users via A/B testing",
       "Achieved 82% itinerary preference prediction accuracy",
     ],
-    links: [{ name: "GitHub", url: "#" }],
+    links: [{ name: "GitHub", url: "https://github.com/umgpy/naviyo" }],
     images: [{ src: "/landing-memojis.png", alt: "Naviyo Project" }],
   },
 
@@ -183,7 +183,7 @@ const projectData: Omit<Project, "content">[] = [
       "Built interactive dashboards reducing reporting time by 60%",
       "Mapped skill adjacency networks across tech roles",
     ],
-    links: [{ name: "GitHub", url: "#" }],
+    links: [{ name: "GitHub", url: "https://github.com/esha-pandya0203/dfp-job-analyzer" }],
     images: [{ src: "/landing-memojis.png", alt: "Job Analyzer Project" }],
   },
 ];
