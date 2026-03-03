@@ -26,7 +26,7 @@ export const getProjects = tool({
             "Built an end-to-end demand forecasting and assortment optimization pipeline for Visionworks eyewear retail — 162 SKUs, 910K+ units. XGBoost model (R² = 0.737) to predict SKU-level monthly demand.",
           techStack: ["XGBoost", "Python", "Time-Series Forecasting", "Retail Analytics"],
           date: "2025",
-          github: "https://github.com/sumreen7/vsp-frame-assortment",
+          github: "https://github.com/sumreen7/VSPVision_IntelligentAnalytics",
         },
         {
           title: "Naviyo — AI Travel Product",
@@ -35,7 +35,7 @@ export const getProjects = tool({
             "Designed an AI travel product, building an NLP review analyzer for sentiment and safety insights, and validated feature direction through A/B testing.",
           techStack: ["NLP", "A/B Testing", "Python", "Sentiment Analysis"],
           date: "Currently working on it",
-          github: "#",
+          github: "https://github.com/umgpy/naviyo",
         },
         {
           title: "Job Analyzer — Workforce Intelligence Platform",
