@@ -75,6 +75,15 @@ Building an AI travel assistant that dynamically adapts itineraries in real time
 
 Key Projects
 
+AI Chief of Staff — Multi-Agent Productivity Orchestration System (2026)
+n8n, LLaMA 3.3-70B, OAuth 2.0, Google Calendar API, Notion API, Slack API, Railway PaaS
+GitHub: https://github.com/sumreen7/ai-chief-of-staff
+- Architected distributed multi-agent system with event-driven microservices orchestrating 7+ autonomous AI agents, achieving <2s latency through asynchronous message passing and stateless workflow design
+- Engineered RAG-enhanced LLM pipeline utilizing LLaMA 3.3-70B with dynamic context injection from heterogeneous data sources (calendar events, email corpus, task metadata) for zero-shot classification and structured JSON generation
+- Implemented production-grade OAuth 2.0 PKCE flows with JWT token management, automatic refresh mechanisms, and secure credential vaulting supporting unlimited concurrent users with 99.9% uptime
+- Built real-time ETL data pipeline processing 100+ daily API calls across Google Calendar, Notion, and Slack with bidirectional sync, implementing idempotent operations and eventual consistency patterns
+- Deployed serverless architecture on Railway PaaS with CRON-triggered batch processing, reducing manual productivity overhead by 80% through fully autonomous daily briefings
+
 NVIDIA x CMU — Social Listening & Market Insights (2025)
 GitHub: https://github.com/sumreen7/nvidiaxcmu
 - Designed NLP pipelines and evaluation frameworks to benchmark sentiment extraction and topic modeling across 100K+ social media posts

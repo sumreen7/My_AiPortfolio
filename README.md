@@ -96,7 +96,7 @@ The portfolio includes an AI-powered chat interface that can:
 
 - Introduce me and share my background
 - Talk about my experience at Salesforce and CMU
-- Describe my projects (NVIDIA x CMU, YOMIGO, Job Analyzer)
+- Describe my projects (Ai Chief of Staff, NVIDIA x CMU, YOMIGO, Job Analyzer)
 - Share my skills and certifications
 - Answer questions about my hobbies (tennis, trekking, @coffeennovels)
 - Provide contact information and resume

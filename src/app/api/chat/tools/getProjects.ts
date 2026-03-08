@@ -11,7 +11,16 @@ export const getProjects = tool({
     return {
       projects: [
         {
-          title: "NVIDIA x CMU — Social Listening & Market Insights",
+          title: "AI Chief of Staff - Multi-Agent Productivity Orchestration",
+          category: "Autonomous AI Systems & LLM Engineering",
+          description:
+            "Architected a distributed multi-agent system with RAG-enhanced LLM pipelines, OAuth 2.0 authentication, and event-driven microservices. Delivers personalized daily briefings via Slack with zero manual input, processing 100+ API calls daily across Google Calendar, Notion, and Gmail.",
+          techStack: ["n8n", "LLaMA 3.3-70B", "OAuth 2.0", "RAG Pipeline", "Event-Driven Architecture", "Microservices"],
+          date: "2026",
+          github: "https://github.com/sumreen7/ai-chief-of-staff",
+        },
+        {
+          title: "NVIDIA x CMU - Social Listening & Market Insights",
           category: "Market Research & AI",
           description:
             "Conducted large-scale market sentiment analysis on 100K+ user posts to identify audience segments and perception gaps, informing product positioning and messaging strategy.",
