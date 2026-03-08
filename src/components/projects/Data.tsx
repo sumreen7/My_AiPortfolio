@@ -106,6 +106,38 @@ function ProjectDetail(project: Omit<Project, "content">) {
 
 const projectData: Omit<Project, "content">[] = [
   {
+    category: "Autonomous AI Systems & LLM Engineering",
+    title: "AI Chief of Staff — Multi-Agent Productivity Orchestration",
+    src: "/spider.png",
+    description:
+      "Architected a production-grade autonomous AI system that orchestrates 7+ specialized agents to manage calendars, emails, and tasks. Delivers personalized daily briefings via Slack with zero manual input through RAG-enhanced LLM pipelines, OAuth 2.0 flows, and event-driven microservices processing 100+ API calls daily.",
+    techStack: [
+      "n8n", 
+      "LLaMA 3.3-70B", 
+      "RAG Pipeline", 
+      "OAuth 2.0", 
+      "Event-Driven Architecture", 
+      "Microservices", 
+      "Google Calendar API", 
+      "Notion API", 
+      "Slack API"
+    ],
+    date: "2026",
+    context: "Personal Project · Production Deployment",
+    role: "System Architect & Engineer",
+    highlights: [
+      "Architected distributed multi-agent system with event-driven microservices orchestrating 7+ autonomous AI agents, achieving <2s latency through asynchronous message passing",
+      "Engineered RAG-enhanced LLM pipeline with dynamic context injection from Google Calendar, Notion databases, and Gmail for zero-shot classification and structured JSON generation",
+      "Implemented production-grade OAuth 2.0 PKCE flows with automatic token refresh, supporting unlimited concurrent users with 99.9% uptime",
+      "Built real-time ETL pipeline processing 100+ daily API calls with bidirectional sync, idempotent operations, and eventual consistency patterns",
+      "Deployed serverless architecture on Railway PaaS with CRON-triggered batch processing, reducing manual productivity overhead by 80%",
+    ],
+    links: [
+      { name: "GitHub", url: "https://github.com/sumreen7/ai-chief-of-staff" }
+    ],
+    images: [{ src: "/spider.png", alt: "AI Chief of Staff architecture" }],
+  },
+  {
     category: "Market Research & AI",
     title: "NVIDIA x CMU — Social Listening & Market Insights",
     src: "/nvidiaxcmu.png",
