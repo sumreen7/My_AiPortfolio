@@ -11,6 +11,15 @@ export const getProjects = tool({
     return {
       projects: [
         {
+          title: "FitTartan — Campus Training, Nutrition & Gym Planning",
+          category: "CMU Campus Product · Wellness",
+          description:
+            "Campus wellness web app that unifies training logs, nutrition tracking, CMU dining–aware meal ideas, gym crowd timing, and an AI assistant. Students hit calorie/macro targets from their profile, see weekly streaks, and plan quieter gym windows. The assistant combines user logs with dining and crowd data so guidance stays relevant to campus life.",
+          techStack: ["React", "Vite", "FastAPI", "LangGraph", "Anthropic", "SQLite"],
+          date: "2026",
+          github: "https://github.com/sumreen7/FitTartan",
+        },
+        {
           title: "AI Chief of Staff - Multi-Agent Productivity Orchestration",
           category: "Autonomous AI Systems & LLM Engineering",
           description:

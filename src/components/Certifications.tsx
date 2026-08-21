@@ -23,8 +23,10 @@ const DEFAULT_CERTIFICATIONS: CertificationCategory[] = [
     category: "Salesforce",
     icon: "salesforce.png", 
     items: [
+      { name: "Salesforce Certified AI Associate", issuer: "Salesforce", year: "2024" },
       { name: "Salesforce Certified Advanced Administrator", issuer: "Salesforce", year: "2023" },
       { name: "Salesforce Certified Platform Developer I", issuer: "Salesforce", year: "2024" },
+      { name: "Salesforce Certified App Builder", issuer: "Salesforce", year: "2023" },
       { name: "Trailblazer — 82,000+ points, 186 badges", issuer: "Salesforce Trailhead", year: "2025" },
     ],
   },

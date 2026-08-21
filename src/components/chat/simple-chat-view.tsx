@@ -51,8 +51,29 @@ export function SimplifiedChatView({
 
   const currentTool = toolInvocations.length > 0 ? [toolInvocations[0]] : [];
 
-  const hasTextContent = message.content.trim().length > 0;
+  const CARD_TOOLS = new Set([
+    'getProjects',
+    'getPresentation',
+    'getResume',
+    'getContact',
+    'getSkills',
+    'getExperience',
+    'getAchievements',
+    'getCertifications',
+    'getSports',
+    'getCrazy',
+    'getMe',
+  ]);
+
   const hasTools = currentTool.length > 0;
+  const hasCardTool = currentTool.some(
+    (tool) => tool && CARD_TOOLS.has(tool.toolName)
+  );
+  const trimmedContent = message.content.trim();
+  const looksLikeJson =
+    trimmedContent.startsWith('{') || trimmedContent.startsWith('[');
+  const hasTextContent =
+    trimmedContent.length > 0 && !hasCardTool && !looksLikeJson;
 
   console.log('currentTool', currentTool);
 

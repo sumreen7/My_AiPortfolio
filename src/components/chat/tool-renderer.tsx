@@ -2,11 +2,9 @@
 import { Contact } from '../contact';
 import Crazy from '../crazy';
 import Experience from '../experience';
-import InternshipCard from '../InternshipCard';
 import Me from '../me';
 import { Presentation } from '../presentation';
 import AllProjects from '../projects/AllProjects';
-import RCB from '../rcb';
 import Resume from '../resume';
 import Skills from '../skills';
 import Sports from '../sport';
@@ -147,24 +145,10 @@ export default function ToolRenderer({ toolInvocations, messageId }: ToolRendere
               </div>
             );
 
-          case 'getInternship':
-            return (
-              <div key={toolCallId} className="w-full rounded-lg p-2">
-                <InternshipCard />
-              </div>
-            );
-
           case 'getMe':
             return (
               <div key={toolCallId} className="w-full rounded-lg p-2">
-                {parsedResult ? <Me data={parsedResult.data} /> : <p>Error loading data.</p>}
-              </div>
-            );
-
-          case 'getRCB':
-            return (
-              <div key={toolCallId} className="w-full rounded-lg p-2">
-                {parsedResult ? <RCB data={parsedResult.data} /> : <p>Error loading data.</p>}
+                <Me />
               </div>
             );
 

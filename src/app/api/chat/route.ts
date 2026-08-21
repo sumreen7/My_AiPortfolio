@@ -13,9 +13,7 @@ import { getCrazy } from './tools/getCrazy';
 import { getExperience } from './tools/getExperience';
 import { getAchievements } from './tools/getAchievements';
 import { getCertifications } from './tools/getCertifications';
-import { getInternship } from './tools/getIntership';
 import { getMe } from './tools/getMe';
-import { getPresentation } from './tools/getPresentation';
 import { getProjects } from './tools/getProjects';
 import { getResume } from './tools/getResume';
 import { getSkills } from './tools/getSkills';
@@ -54,6 +52,7 @@ setInterval(() => {
 
 // Enhanced error handler with detailed error types
 function errorHandler(error: unknown): string {
+  console.error('[CHAT-API] Stream error:', error);
   if (error == null) {
     return 'An unexpected error occurred. Please try again.';
   }
@@ -80,6 +79,38 @@ function errorHandler(error: unknown): string {
   }
   
   return 'An unexpected error occurred. Please try again.';
+}
+
+function lastUserText(messages: { role?: string; content?: unknown }[]): string {
+  const last = [...messages].reverse().find((message) => message.role === 'user');
+  return typeof last?.content === 'string' ? last.content : '';
+}
+
+function forcedToolName(messages: { role?: string; content?: unknown }[]): string | undefined {
+  const q = lastUserText(messages).toLowerCase();
+  if (!q) return undefined;
+  if (q.includes('who are you') || q.includes('know more about you') || q.includes('tell me about yourself')) {
+    return 'getMe';
+  }
+  if (q.includes('work experience') || q.includes('professional background')) {
+    return 'getExperience';
+  }
+  if (q.includes('your projects') || q.includes('working on right now')) {
+    return 'getProjects';
+  }
+  if (q.includes('achievements') || q.includes('accomplishments')) {
+    return 'getAchievements';
+  }
+  if (q.includes('your skills') || q.includes('soft and hard skills')) {
+    return 'getSkills';
+  }
+  if (q.includes('how can i contact') || q.includes('how can i reach') || q.includes('contact you')) {
+    return 'getContact';
+  }
+  if (q.includes('certifications') || q.includes('credentials')) {
+    return 'getCertifications';
+  }
+  return undefined;
 }
 
 // Rate limiting function
@@ -217,7 +248,6 @@ export async function POST(req: Request) {
 
     const tools = {
       getProjects: createCachedTool(getProjects, 'getProjects'),
-      getPresentation: createCachedTool(getPresentation, 'getPresentation'),
       getResume: createCachedTool(getResume, 'getResume'),
       getContact: createCachedTool(getContact, 'getContact'),
       getSkills: createCachedTool(getSkills, 'getSkills'),
@@ -226,19 +256,20 @@ export async function POST(req: Request) {
       getCertifications: createCachedTool(getCertifications, 'getCertifications'),
       getSports: createCachedTool(getSports, 'getSports'),
       getCrazy: createCachedTool(getCrazy, 'getCrazy'),
-      getInternship: createCachedTool(getInternship, 'getInternship'),
       getMe: createCachedTool(getMe, 'getMe'),
       getWebSearch: createCachedTool(getWebSearch, 'getWebSearch'),
     };
 
-    console.log('Tool invocations:', tools);
+    const forcedTool = forcedToolName(messages);
+    console.log('[CHAT-API] forcedTool:', forcedTool ?? 'auto');
 
     // Optimized model configuration
     const modelConfig = {
-      name: 'llama-3.1-8b-instant',
-      maxSteps: 2, // Reduced for faster tool calls
-      maxTokens: 500, // Reduced token usage to avoid rate limits
-      temperature: 0.5, // Lower temperature for more focused responses
+      name: 'openai/gpt-oss-120b',
+      // One model turn: call a tool, then stop. A second turn dumps the tool JSON as chat text.
+      maxSteps: 1,
+      maxTokens: 1200,
+      temperature: 0.4,
     };
 
     // Optimized retry mechanism with backoff
@@ -253,6 +284,9 @@ export async function POST(req: Request) {
           messages: messagesWithSystem,
           toolCallStreaming: true,
           tools,
+          toolChoice: forcedTool
+            ? { type: 'tool', toolName: forcedTool }
+            : 'auto',
           maxSteps: modelConfig.maxSteps,
           temperature: modelConfig.temperature,
           maxTokens: modelConfig.maxTokens,

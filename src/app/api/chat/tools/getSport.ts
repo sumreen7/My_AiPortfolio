@@ -29,7 +29,7 @@ export const getSports = tool({
           description: "Massive foodie — I love exploring new cuisines and local food scenes wherever I travel. Food is my favorite way to experience a new culture",
         },
         travel: {
-          description: "Travel is genuinely my reset button. Exploring new places, meeting people, and experiencing different cultures is something I actively prioritize — it's also what inspired the YOMIGO travel product I built!"
+          description: "Travel is genuinely my reset button. Exploring new places, meeting people, and experiencing different cultures is something I actively prioritize — it's also what inspired Naviyo, the adaptive AI travel assistant I'm building."
         },
         animals: {
           description: "I live with a dog and 2 cats — big animal person through and through"

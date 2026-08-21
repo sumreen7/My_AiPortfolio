@@ -37,9 +37,12 @@ export const getAchievements = tool({
           category: "Engineering Impact @ Salesforce",
           icon: "⚡",
           items: [
+            "Cut GPU compute by 75% across Agentforce TensorFlow models by shipping a production migration from NVIDIA Triton to open source Ray Serve",
+            "Packed multiple models onto one GPU instead of one GPU per model — a direct serving-cost cut",
             "40% reduction in onboarding time by redesigning lifecycle workflows",
             "65% cut in manual verification effort via A/B tested automation",
             "Shipped features serving 40K+ enterprise users",
+            "Top 6 in the company-wide Agentforce hackathon — RedTape Reaper",
             "82,000+ Trailhead points, 186 badges",
           ],
         },

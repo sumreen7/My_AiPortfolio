@@ -9,6 +9,23 @@ import Image from 'next/image';
 const Experience = () => {
   const experienceData = [
     {
+      title: 'Software Engineering Intern — Agentforce AI Cloud',
+      company: 'Salesforce',
+      period: 'Jun 2026 – Aug 2026',
+      location: 'San Francisco, CA',
+      description: 'Owned a production Agentforce inference migration: deprecated legacy NVIDIA Triton with open source Ray Serve and cut GPU compute by 75% across the TensorFlow models.',
+      achievements: [
+        'Drove GPU compute down 75% by packing multiple Agentforce models onto a single GPU instead of dedicating one GPU per model — a direct cut in serving infrastructure cost',
+        'Shipped the Ray Serve migration into production — TensorFlow models serving live Agentforce inference on the new stack',
+        'Stood up a live speech-to-text and text-to-speech pipeline on Ray Serve, proving the new platform could host real-time voice AI — not just batch text models',
+        'Top 6 in the company-wide Agentforce hackathon: built RedTape Reaper with my team, a human-in-the-loop agent orchestration that surfaces rubber-stamped approval workflows',
+      ],
+      technologies: ['Ray', 'Ray Serve', 'NVIDIA Triton', 'TensorFlow', 'GPUs', 'Docker', 'Python', 'Agentforce AI Cloud'],
+      type: 'Internship',
+      logo: '/salesforce.png',
+      color: 'bg-blue-50 text-blue-600 border border-blue-200',
+    },
+    {
       title: 'Co-Founder & Builder',
       company: 'Naviyo – Adaptive AI Travel Partner',
       period: 'Present',
@@ -27,19 +44,20 @@ const Experience = () => {
       color: 'bg-violet-50 text-violet-600 border border-violet-200',
     },
     {
-      title: 'Software Engineer',
+      title: 'Software Engineer — Asset Management',
       company: 'Salesforce',
       period: 'Jul 2023 – Aug 2025',
       location: 'Hyderabad, India',
-      description: 'Owned end-to-end feature delivery for internal asset management workflows serving 40K+ enterprise users.',
+      description: 'Shipped Agentforce agents and agentic AI workflows for asset management used by 40K+ enterprise users.',
       achievements: [
-        'Drove a 40% reduction in onboarding time by redesigning lifecycle workflows and eliminating manual handoffs',
-        'Led A/B testing on automation and validation logic, cutting manual verification effort by 65% while maintaining compliance',
-        'Defined and tracked core product metrics (adoption rate, processing latency, error rate) through custom dashboards',
-        'Mentored a junior intern on KPI design, dashboard development, and stakeholder communication',
-        'Collaborated cross-functionally with ops, infra, and business teams to ship PRDs from ideation to production'
+        'Led requirements and rollout of Agentforce AI agents that automated onboarding and asset lifecycle workflows for 40K+ users',
+        'Designed agentic pipelines where LLM agents ran retrieval, validation, decisioning, and action execution inside Salesforce',
+        'Integrated agentic AI with Salesforce workflows, REST APIs, and event triggers — 40% lower end-to-end asset creation latency',
+        'Cut onboarding time 40% and manual verification 65% with AI-driven validation rules, without raising compliance risk',
+        'Built dashboards on adoption, latency, and errors; used SOQL across large object graphs to find failure patterns at scale',
+        'Mentored a junior teammate on a Slack AI agent for on-call, cutting triage time by ~50%'
       ],
-      technologies: ['Salesforce', 'SOQL', 'Python', 'REST APIs', 'Workflow Automation', 'A/B Testing', 'Dashboards'],
+      technologies: ['Agentforce', 'Salesforce', 'SOQL', 'Python', 'REST APIs', 'LLM Agents', 'Workflow Automation'],
       type: 'Full-time',
       logo: '/salesforce.png',
       color: 'bg-blue-50 text-blue-600 border border-blue-200',

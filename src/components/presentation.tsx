@@ -11,7 +11,7 @@ export function Presentation() {
     location: 'Pittsburgh, PA · Open to relocation & remote',
     education: 'MISM @ Carnegie Mellon University',
     description:
-      "Hey 👋\nI'm Sumreen — a software engineer who loves building things that actually matter. I spent two years at Salesforce shipping AI automation workflows used by 40K+ enterprise users, and now I'm at CMU going deeper on the product and data side.\n\nWhen I'm not at my laptop, I'm out on the tennis court, buried in a fantasy mystery novel, or planning my next trek. I also run @coffeennovels — a book community on Instagram with 50K+ followers.",
+      "Hey 👋\nI'm Sumreen — a Salesforce software engineer on Asset Management and an agentic AI builder. I spent two years at Salesforce shipping Agentforce workflows used by 40K+ enterprise users (40% faster onboarding, 65% less manual verification). Now I'm a CMU MISM graduate going deeper on product and data, and co-founding Naviyo.\n\nWhen I'm not at my laptop, I'm on a tennis court, in a fantasy mystery, or planning a trek. I also run @coffeennovels — a book community with 60K+ followers.",
     src: '/new-image.png',
   };
 

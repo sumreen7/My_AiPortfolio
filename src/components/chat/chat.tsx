@@ -2,7 +2,7 @@
 import { useChat } from '@ai-sdk/react';
 import { AnimatePresence, motion } from 'framer-motion';
 import dynamic from 'next/dynamic';
-import { useSearchParams } from 'next/navigation';
+import { ArrowLeft, X } from 'lucide-react';
 import React, { useCallback, useEffect, useMemo, useRef, useState } from 'react';
 import { toast } from 'sonner';
 
@@ -10,14 +10,12 @@ const ChatBottombar = dynamic(() => import('@/components/chat/chat-bottombar'));
 const ChatLanding = dynamic(() => import('@/components/chat/chat-landing'));
 const ChatMessageContent = dynamic(() => import('@/components/chat/chat-message-content'));
 const SimplifiedChatView = dynamic(() => import('@/components/chat/simple-chat-view').then(mod => ({ default: mod.SimplifiedChatView })));
-const WelcomeModal = dynamic(() => import('@/components/welcome-modal'));
 const HelperBoost = dynamic(() => import('./HelperBoost'));
 
 import {
   ChatBubble,
   ChatBubbleMessage,
 } from '@/components/ui/chat/chat-bubble';
-import { ArrowLeft, X } from 'lucide-react';
 
 const MOTION_CONFIG = {
   initial: { opacity: 0, y: 20 },
@@ -107,9 +105,14 @@ interface ChatProps {
 }
 
 const Chat = ({ initialQuery, onClose }: ChatProps) => {
-  const searchParams = useSearchParams();
-  const queryFromParams = searchParams.get('query');
-  const finalInitialQuery = initialQuery || queryFromParams;
+  const [queryFromUrl, setQueryFromUrl] = useState<string | null>(null);
+
+  useEffect(() => {
+    const query = new URLSearchParams(window.location.search).get('query');
+    setQueryFromUrl(query);
+  }, []);
+
+  const finalInitialQuery = initialQuery || queryFromUrl;
   
   const [chatState, setChatState] = useState<ChatState>({
     autoSubmitted: false,
@@ -130,6 +133,7 @@ const Chat = ({ initialQuery, onClose }: ChatProps) => {
     append,
   } = useChat({
     api: '/api/chat',
+    maxSteps: 1,
     onResponse: useCallback((response: any) => {
       if (response) {
         setChatState(prev => ({ ...prev, loadingSubmit: false, isTalking: true }));

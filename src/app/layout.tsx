@@ -15,14 +15,14 @@ const inter = Inter({
 
 export const metadata: Metadata = {
   title: "Sumreen's Portfolio",
-  description: "Portfolio of Sumreen - Generative AI Engineer, Cloud & AI Enthusiast. Explore my projects, skills, and experience.",
+  description: "Portfolio of Fathima Sumreen — Salesforce Software Engineer (Asset Management), Agentic AI Builder, CMU MISM Graduate.",
   keywords: [
     "Sumreen",
     "Portfolio",
-    "Generative AI Engineer",
-    "Cloud",
-    "AI",
-    "Web Development",
+    "Salesforce",
+    "Agentic AI",
+    "CMU",
+    "MISM",
     "React",
     "Next.js",
     "TypeScript"
@@ -39,13 +39,13 @@ export const metadata: Metadata = {
     locale: "en_US",
     url: "https://sumreen7.com",
     title: "Fathima Sumreen Portfolio",
-    description: "Portfolio of Fathima Sumreen - Generative AI Engineer, Cloud & AI Enthusiast.",
+    description: "Portfolio of Fathima Sumreen — Salesforce Software Engineer (Asset Management), Agentic AI Builder, CMU MISM Graduate.",
     siteName: "Fathima Sumreen Portfolio",
   },
   twitter: {
     card: "summary_large_image",
     title: "Fathima Sumreen Portfolio",
-    description: "Portfolio of Fathima Sumreen - Generative AI Engineer, Cloud & AI Enthusiast.",
+    description: "Portfolio of Fathima Sumreen — Salesforce Software Engineer (Asset Management), Agentic AI Builder, CMU MISM Graduate.",
     creator: "@sumreen7",
   },
   icons: {

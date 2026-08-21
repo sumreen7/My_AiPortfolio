@@ -3,7 +3,6 @@
 import FluidCursor from '@/components/FluidCursor';
 import { Button } from '@/components/ui/button';
 
-import WelcomeModal from '@/components/welcome-modal';
 import { motion, AnimatePresence } from 'framer-motion';
 import {
   ArrowRight,
@@ -52,26 +51,12 @@ const questionConfig = [
   { key: 'Contact', color: '#C19433', icon: Mail },
 ] as const;
 
-const TITLES = [
-  'GenAI Developer',
-  'Data Scientist',
-  'Product Thinker',
-  'ML Engineer'
-];
-
-const memojiImages = [
-  '/landingpage2.png',
-  '/landingpage4.png',
-  '/landingpage1.png',
-  '/landingpage3.png'
-];
-
-const memojiSizes = [
-  { width: 325, height: 325 },
-  { width: 500, height: 500 },
-  { width: 350, height: 350 },
-  { width: 400, height: 400 },
-];
+const HERO_SLIDES = [
+  { title: 'Salesforce Software Engineer', src: '/landingpage2.png' },
+  { title: 'Agentic AI Builder', src: '/landingpage4.png' },
+  { title: 'CMU MISM Graduate', src: '/landingpage1.png' },
+  { title: 'Product Thinker', src: '/landingpage3.png' },
+] as const;
 
 /* ---------- component ---------- */
 export default function Home() {
@@ -114,22 +99,11 @@ export default function Home() {
 
   useEffect(() => {
     const titleInterval = setInterval(() => {
-      setCurrentTitle((prev) => (prev + 1) % TITLES.length);
-    }, 3000);
+      setCurrentTitle((prev) => (prev + 1) % HERO_SLIDES.length);
+    }, 4500);
 
     return () => clearInterval(titleInterval);
   }, []);
-
-  useEffect(() => {
-    const img = new window.Image();
-    img.src = '/landing_memojis.png';
-
-    const gifImg = new window.Image();
-    gifImg.src = '/EmojiMovie774657265.gif';
-  }, []);
-
-  const currentMemoji = memojiImages[currentTitle];
-  const currentMemojiSize = memojiSizes[currentTitle];
 
   return (
     <motion.div
@@ -174,24 +148,20 @@ export default function Home() {
         initial="hidden"
         animate="visible"
       >
-        <div className="z-100">
-          <WelcomeModal />
-        </div>
-
         <h2 className="text-secondary-foreground mt-1 text-xl font-semibold md:text-2xl">
           Hey, I'm Sumreen 👋
         </h2>
-        <div style={{ minHeight: 60 }}>
+        <div className="flex min-h-[5.5rem] items-center justify-center px-2 sm:min-h-[6.5rem] md:min-h-[7.5rem]">
           <AnimatePresence mode="wait">
             <motion.h1
-              key={TITLES[currentTitle]}
-              className="text-4xl font-bold sm:text-5xl md:text-6xl lg:text-7xl"
-              initial={{ opacity: 0, y: 20 }}
+              key={HERO_SLIDES[currentTitle].title}
+              className="text-3xl font-bold text-balance sm:text-4xl md:text-5xl lg:text-6xl"
+              initial={{ opacity: 0, y: 12 }}
               animate={{ opacity: 1, y: 0 }}
-              exit={{ opacity: 0, y: -20 }}
-              transition={{ duration: 0.5 }}
+              exit={{ opacity: 0, y: -12 }}
+              transition={{ duration: 0.4 }}
             >
-              {TITLES[currentTitle]}
+              {HERO_SLIDES[currentTitle].title}
             </motion.h1>
           </AnimatePresence>
         </div>
@@ -199,59 +169,27 @@ export default function Home() {
 
       {/* centre memoji */}
       <motion.div
-        className="relative z-10 mt-0 mb-0 flex justify-center"
-        whileHover={{ scale: 1.05 }}
+        className="relative z-10 h-[260px] w-[min(100%,420px)] sm:h-[300px] md:h-[340px]"
+        whileHover={{ scale: 1.03 }}
         transition={{ duration: 0.2 }}
       >
         <AnimatePresence mode="wait">
-          {currentTitle === 0 && (
-            <motion.div
-              key="memoji-0"
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              exit={{ opacity: 0, y: -20 }}
-              transition={{ duration: 0.5 }}
-              className="relative -top-20 -mb-29.5"
-            >
-              <Image src="/landingpage2.png" alt="GenAI Developer" width={449} height={449} priority className="h-[449px] w-[449px] object-contain" />
-            </motion.div>
-          )}
-          {currentTitle === 1 && (
-            <motion.div
-              key="memoji-1"
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              exit={{ opacity: 0, y: -20 }}
-              transition={{ duration: 0.5 }}
-              className="relative -top-20 -mb-29.5"
-            >
-              <Image src="/landingpage4.png" alt="Data Scientist" width={449} height={449} priority className="h-[449px] w-[449px] object-contain" />
-            </motion.div>
-          )}
-          {currentTitle === 2 && (
-            <motion.div
-              key="memoji-2"
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              exit={{ opacity: 0, y: -20 }}
-              transition={{ duration: 0.5 }}
-              className="relative top-0 mb-4"
-            >
-              <Image src="/landingpage1.png" alt="Product Thinker" width={315} height={315} priority className="h-[315px] w-[315px] object-contain" />
-            </motion.div>
-          )}
-          {currentTitle === 3 && (
-            <motion.div
-              key="memoji-3"
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              exit={{ opacity: 0, y: -20 }}
-              transition={{ duration: 0.5 }}
-              className="relative -top-20 -mb-36"
-            >
-              <Image src="/landingpage3.png" alt="ML Engineer" width={475} height={475} priority className="h-[475px] w-[475px] object-contain" />
-            </motion.div>
-          )}
+          <motion.div
+            key={HERO_SLIDES[currentTitle].src}
+            className="absolute inset-0"
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+            transition={{ duration: 0.4 }}
+          >
+            <Image
+              src={HERO_SLIDES[currentTitle].src}
+              alt={HERO_SLIDES[currentTitle].title}
+              fill
+              priority
+              className="object-contain"
+            />
+          </motion.div>
         </AnimatePresence>
       </motion.div>
 

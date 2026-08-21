@@ -11,10 +11,20 @@ const Skills = () => {
       category: 'Programming & Core Technologies',
       icon: <Code className="h-5 w-5" />,
       skills: [
-        'Python', 'Java', 'SQL', 'Bash', 'JavaScript/TypeScript',
+        'Python', 'Java', 'SQL', 'SOQL', 'Bash', 'JavaScript/TypeScript',
         'HTML/CSS', 'Git', 'GitHub', 'Docker', 'Kubernetes',
       ],
       color: 'bg-blue-50 text-blue-600 border border-blue-200 dark:bg-blue-950/30 dark:text-blue-400 dark:border-blue-800',
+    },
+    {
+      category: 'Salesforce & Agentic AI',
+      icon: <Cpu className="h-5 w-5" />,
+      skills: [
+        'Agentforce', 'Salesforce', 'Ray', 'Ray Serve', 'SOQL', 'Apex',
+        'LLM Agents', 'RAG', 'Tool Calling', 'Prompt Engineering',
+        'Multi-Agent Systems', 'Workflow Automation',
+      ],
+      color: 'bg-sky-50 text-sky-600 border border-sky-200 dark:bg-sky-950/30 dark:text-sky-400 dark:border-sky-800',
     },
     {
       category: 'Frontend & Web Development',
@@ -28,7 +38,7 @@ const Skills = () => {
     {
       category: 'Cloud & DevOps',
       icon: <Cpu className="h-5 w-5" />,
-      skills: ['Azure', 'GCP', 'CI/CD', 'Containerization', 'Cloud-native Development'],
+      skills: ['Azure', 'AWS', 'GCP', 'CI/CD', 'Docker', 'Kubernetes'],
       color: 'bg-purple-50 text-purple-600 border border-purple-200 dark:bg-purple-950/30 dark:text-purple-400 dark:border-purple-800',
     },
     {

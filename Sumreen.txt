@@ -19,6 +19,15 @@ BI & Analytics: Power BI, Tableau, Matplotlib, Seaborn, KPI design, data storyte
 
 Professional Experience
 
+Software Engineering Intern — Salesforce
+Agentforce AI Cloud (Ray / inference platform) | San Francisco, CA | Jun 2026 – Aug 2026
+
+- Owned a production Agentforce inference migration: deprecated legacy NVIDIA Triton with open source Ray Serve and cut GPU compute by 75% across the TensorFlow models
+- Drove GPU compute down 75% by packing multiple Agentforce models onto a single GPU instead of dedicating one GPU per model — a direct cut in serving infrastructure cost
+- Shipped the Ray Serve migration into production — TensorFlow models serving live Agentforce inference on the new stack
+- Stood up a live speech-to-text and text-to-speech pipeline on Ray Serve, proving the new platform could host real-time voice AI — not just batch text models
+- Top 6 in the company-wide Agentforce hackathon: built RedTape Reaper with my team, a human-in-the-loop agent orchestration that surfaces rubber-stamped approval workflows
+
 Software Engineer — Salesforce
 Asset Management, Business Technology | Hyderabad, India | Jul 2023 – Aug 2025
 
@@ -74,6 +83,15 @@ Building an AI travel assistant that dynamically adapts itineraries in real time
 ---
 
 Key Projects
+
+FitTartan — Campus Training, Nutrition & Gym Planning (2026)
+React, Vite, FastAPI, LangGraph, Anthropic, SQLite
+GitHub: https://github.com/sumreen7/FitTartan
+- Campus-oriented wellness web app that brings training, nutrition, and gym planning into one place for Carnegie Mellon students
+- Log workouts and food; track calorie and macro progress against profile-informed targets
+- Meal ideas grounded in CMU dining menus with optional USDA nutrition enrichment
+- Weekly trends, streaks, gym check-ins, and estimated quieter gym windows
+- Built-in assistant answers meals, workouts, and summaries using logs plus dining and crowd data
 
 AI Chief of Staff — Multi-Agent Productivity Orchestration System (2026)
 n8n, LLaMA 3.3-70B, OAuth 2.0, Google Calendar API, Notion API, Slack API, Railway PaaS

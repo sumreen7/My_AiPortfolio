@@ -106,6 +106,35 @@ function ProjectDetail(project: Omit<Project, "content">) {
 
 const projectData: Omit<Project, "content">[] = [
   {
+    category: "CMU Campus Product · Wellness",
+    title: "FitTartan — Campus Training, Nutrition & Gym Planning",
+    src: "/fittartan.png",
+    description:
+      "FitTartan is Carnegie Mellon's campus-oriented wellness web app that brings training, nutrition, and practical gym planning into one place. Students can log workouts and food, see progress against calorie and macro targets informed by their profile, and explore meal ideas grounded in CMU dining menus with optional nutrition enrichment. The app surfaces weekly trends and streaks, gym check-ins, and estimated quieter gym windows so it is easier to plan around crowded facilities. A built-in assistant answers questions about meals, workouts, and summaries by combining the user's logs with dining and crowd data so guidance stays relevant to life on campus.",
+    techStack: [
+      "React",
+      "Vite",
+      "Tailwind CSS",
+      "FastAPI",
+      "LangGraph",
+      "Anthropic",
+      "SQLite",
+      "Recharts",
+    ],
+    date: "2026",
+    context: "CMU Campus Product · Wellness",
+    role: "Engineer & Product Builder",
+    highlights: [
+      "Unified workout logging, nutrition tracking, and gym planning for CMU students in one web app",
+      "Calorie and macro targets informed by profile (weight, goal, activity, optional biometrics)",
+      "Meal ideas grounded in CMU dining menus, with optional USDA nutrition enrichment",
+      "Weekly trends, streaks, gym check-ins, and estimated quieter gym windows for crowded facilities",
+      "Built-in assistant (Anthropic + LangGraph) that answers from the user's logs plus dining and crowd data",
+    ],
+    links: [{ name: "GitHub", url: "https://github.com/sumreen7/FitTartan" }],
+    images: [{ src: "/fittartan.png", alt: "FitTartan — Carnegie Mellon Tartans" }],
+  },
+  {
     category: "Autonomous AI Systems & LLM Engineering",
     title: "AI Chief of Staff — Multi-Agent Productivity Orchestration",
     src: "/spider.png",
